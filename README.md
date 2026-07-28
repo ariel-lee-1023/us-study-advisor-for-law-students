@@ -31,6 +31,7 @@ each piece of domain knowledge decays.
 
 ```
 study-abroad-advisor/
+├── README.md
 ├── SKILL.md                      # the core advising voice — loaded always
 ├── references/
 │   ├── calibration.md            # probability, base rates, updating
@@ -41,6 +42,7 @@ study-abroad-advisor/
 │   └── provenance.md             # sources, fidelity notes, staleness ledger
 ├── CHANGELOG.md
 ├── LICENSE
+├── NOTICE.md                     # originality and source-attribution statement
 └── .gitignore
 ```
 
@@ -73,7 +75,7 @@ the question is outside its material.
 the `references/` subdirectory:
 
 ```bash
-git clone https://github.com/USERNAME/study-abroad-advisor.git
+git clone https://github.com/ariel-lee-1023/study-abroad-advisor.git
 cp -r study-abroad-advisor ~/.claude/skills/study-abroad-advisor
 ```
 

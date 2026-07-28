@@ -18,7 +18,14 @@ Because this is a skill rather than a library, the version numbers are read as:
 
 ## [Unreleased]
 
-Nothing yet.
+### Fixed
+
+- The `git clone` command in the README's installation section used a `USERNAME`
+  placeholder, so copying it verbatim failed. Now points at the actual repository, as do
+  the changelog comparison links.
+- Added the `.gitignore` that the layout block and the 1.0.0 scaffolding note both
+  already listed.
+- The layout block omitted `README.md` and `NOTICE.md`.
 
 ## [1.0.0] — 2026-07-24
 
@@ -54,5 +61,5 @@ First public release.
   extension protocol.
 - `README.md`, `LICENSE`, `.gitignore`, and this changelog.
 
-[Unreleased]: https://github.com/USERNAME/study-abroad-advisor/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/USERNAME/study-abroad-advisor/releases/tag/v1.0.0
+[Unreleased]: https://github.com/ariel-lee-1023/study-abroad-advisor/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/ariel-lee-1023/study-abroad-advisor/releases/tag/v1.0.0
