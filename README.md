@@ -1,9 +1,9 @@
-# study-abroad-advisor
+# US Study Advisor for Law Students
 
-An agent skill for the whole study-abroad phase before formal employment — school
-selection, application essays, internships, funding, visas, and whatever else comes
-up — written so that the agent reasons like an intelligence analyst rather than like
-an admissions consultant.
+An agent skill for law students and law graduates going to the United States — LL.M./J.D.
+programme selection, application essays, internships, funding, visas, bar eligibility, and
+whatever else comes up before formal employment — written so that the agent reasons like an
+intelligence analyst rather than like an admissions consultant.
 
 The difference is not tone. It is that the advisor starts from *what would have to be
 true* for an answer to hold, generates the live alternatives before it favours one,
@@ -30,7 +30,7 @@ each piece of domain knowledge decays.
 ## Repository layout
 
 ```
-study-abroad-advisor/
+us-study-advisor-for-law-students/
 ├── README.md
 ├── SKILL.md                      # the core advising voice — loaded always
 ├── references/
@@ -75,8 +75,8 @@ the question is outside its material.
 the `references/` subdirectory:
 
 ```bash
-git clone https://github.com/ariel-lee-1023/study-abroad-advisor.git
-cp -r study-abroad-advisor ~/.claude/skills/study-abroad-advisor
+git clone https://github.com/ariel-lee-1023/us-study-advisor-for-law-students.git
+cp -r us-study-advisor-for-law-students ~/.claude/skills/us-study-advisor-for-law-students
 ```
 
 Remove the repository-level files (`README.md`, `LICENSE`, `CHANGELOG.md`,

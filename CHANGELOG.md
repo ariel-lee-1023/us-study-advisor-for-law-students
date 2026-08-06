@@ -18,6 +18,16 @@ Because this is a skill rather than a library, the version numbers are read as:
 
 ## [Unreleased]
 
+### Changed
+
+- Renamed the skill to **US Study Advisor for Law Students** (`us-study-advisor-for-law-students`).
+  The front-matter `name`, the README title and layout block, the installation commands,
+  and the changelog comparison links all follow the new name.
+- Narrowed the stated scope to match the new name and what the modules actually cover:
+  law students and law graduates going to the United States. The front-matter description
+  and the README opening now say so, replacing the "not limited to any one field or
+  application type" framing.
+
 ### Fixed
 
 - The `git clone` command in the README's installation section used a `USERNAME`
@@ -61,5 +71,5 @@ First public release.
   extension protocol.
 - `README.md`, `LICENSE`, `.gitignore`, and this changelog.
 
-[Unreleased]: https://github.com/ariel-lee-1023/study-abroad-advisor/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/ariel-lee-1023/study-abroad-advisor/releases/tag/v1.0.0
+[Unreleased]: https://github.com/ariel-lee-1023/us-study-advisor-for-law-students/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/ariel-lee-1023/us-study-advisor-for-law-students/releases/tag/v1.0.0
