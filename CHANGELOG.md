@@ -32,10 +32,22 @@ Because this is a skill rather than a library, the version numbers are read as:
   gap `legal-writing.md` and `llm-pathway.md` left around statement topic selection,
   architecture, and recommender strategy. `SKILL.md`'s trigger table and front-matter
   description, `README.md`'s layout tree, trigger table, source corpus, and vintage
-  table, and `provenance.md` §§1, 3, 4, 5 are updated accordingly.
+  table, and `fidelity-ledger/provenance.md` §§1, 3, 4, 5 are updated accordingly.
 
 ### Changed
 
+- **Moved `provenance.md` out of `references/` into a new top-level `fidelity-ledger/`
+  directory**, so it now lives at `fidelity-ledger/provenance.md`. `references/` is
+  reserved for modules a host agent trigger-loads into the advising voice;
+  `provenance.md` is maintainer-facing documentation — sourcing, fidelity notes, the
+  staleness ledger, and the extension protocol — that is never loaded by a host and
+  never meant to surface in the advising voice, so it should never have shared a
+  directory with the modules that are. `SKILL.md`'s trigger table no longer lists
+  `provenance.md` as a trigger (it was never actually one); `README.md`'s layout tree,
+  installation section, and all in-body citations now point at the new path. If you
+  installed a previous version by copying `references/`, re-copy `fidelity-ledger/`
+  separately (or skip it — it is documentation, not skill content, and nothing in
+  `references/` or `SKILL.md` depends on it being present at runtime).
 - Renamed the skill to **US Study Advisor for Law Students** (`us-study-advisor-for-law-students`).
   The front-matter `name`, the README title and layout block, the installation commands,
   and the changelog comparison links all follow the new name.

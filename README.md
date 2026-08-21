@@ -33,19 +33,30 @@ each piece of domain knowledge decays.
 us-study-advisor-for-law-students/
 ├── README.md
 ├── SKILL.md                      # the core advising voice — loaded always
-├── references/
+├── references/                   # trigger-loaded modules — host-agent-facing
 │   ├── calibration.md            # probability, base rates, updating
 │   ├── toolbox.md                # structured analytic techniques
 │   ├── llm-pathway.md            # LL.M./J.D., bar eligibility, visas
 │   ├── legal-writing.md          # U.S. legal-writing convention
 │   ├── personal-statements.md    # topic selection, structure, addenda, recommendation letters
-│   ├── institutions.md           # how U.S. universities are funded and governed
-│   └── provenance.md             # sources, fidelity notes, staleness ledger
+│   └── institutions.md           # how U.S. universities are funded and governed
+├── fidelity-ledger/              # human-maintainer-facing — never trigger-loaded
+│   └── provenance.md             # sources, fidelity notes, staleness ledger, extension protocol
 ├── CHANGELOG.md
 ├── LICENSE
 ├── NOTICE.md                     # originality and source-attribution statement
 └── .gitignore
 ```
+
+`references/` and `fidelity-ledger/` sit side by side, on purpose, and are not
+interchangeable. `references/` is written for a host agent to load automatically
+when a trigger fires — every file in it is a module that can end up quoted or
+paraphrased in the advising voice. `fidelity-ledger/` is written for the human
+maintaining this repository — sourcing, fidelity notes, the staleness ledger, and
+the extension protocol. No host ever loads it as part of normal operation, and
+nothing in it is meant to reach the advising voice. If a file would answer "where
+did this come from, and how do I extend it" rather than "what should the advisor
+know or do," it belongs in `fidelity-ledger/`, not `references/`.
 
 ---
 
@@ -54,7 +65,7 @@ us-study-advisor-for-law-students/
 `SKILL.md` is the reasoning temperament and stands alone. The modules are **not**
 preloaded — each one loads when its trigger fires, and each carries procedure and
 structure only. A module that starts speaking in the first person has broken the
-architecture, and `provenance.md` says so explicitly.
+architecture, and `fidelity-ledger/provenance.md` says so explicitly.
 
 | Trigger | Module |
 |---|---|
@@ -64,17 +75,19 @@ architecture, and `provenance.md` says so explicitly.
 | U.S. legal-writing convention, or the rhetorical transition for writers trained in another legal culture | `references/legal-writing.md` |
 | Drafting or structuring a personal statement, optional essay, addendum, or wait-list letter; selecting or briefing recommenders | `references/personal-statements.md` |
 | How U.S. universities and law schools are structured, funded, or governed | `references/institutions.md` |
-| Auditing, editing, or extending the skill | `references/provenance.md` |
 
 For any domain not covered, the advisor reasons from the core and says plainly that
-the question is outside its material.
+the question is outside its material. Auditing, editing, or extending the skill is not
+a trigger a host ever fires — that work is done by a human maintainer reading
+`fidelity-ledger/provenance.md` directly.
 
 ---
 
 ## Installation
 
 **As a Claude skill.** Copy the whole directory into your skills folder, preserving
-the `references/` subdirectory:
+the `references/` subdirectory. You can omit `fidelity-ledger/` from the copy — it is
+maintainer documentation, not skill content, and no host loads it:
 
 ```bash
 git clone https://github.com/ariel-lee-1023/us-study-advisor-for-law-students.git
@@ -130,7 +143,7 @@ reliably is **structure** — the sequence of decisions, the shape of a system, 
 mechanism behind an institution's behaviour. What they do not carry reliably is
 **current fact**.
 
-The full decay-ordered ledger is in `references/provenance.md` §4. The headline:
+The full decay-ordered ledger is in `fidelity-ledger/provenance.md` §4. The headline:
 
 | Content | Decay | Handling |
 |---|---|---|
@@ -183,23 +196,23 @@ terminology is preserved exactly where the term *is* the framework — ACH, Key
 Assumptions Check, ELP, RCM, revenue theory, disease theory, cost/price/net price,
 perpetual beta, Fermi-izing, TELL model, uniqueness filter — because paraphrasing a
 named framework destroys the ability to find it in the original. A behaviour-by-behaviour
-source map is in `references/provenance.md` §2.
+source map is in `fidelity-ledger/provenance.md` §2.
 
 ---
 
 ## Extending it
 
-The extension protocol is in `references/provenance.md` §6. In short: distil structure
+The extension protocol is in `fidelity-ledger/provenance.md` §6. In short: distil structure
 and decision rules rather than summary, preserve the author's exact framework names,
 keep the file trigger-loaded and headed with **Sources / Trigger / What this file is**,
 add a vintage warning and a staleness row, end with decision rules, and register the
-source and the new behaviours in `provenance.md` §§1–2.
+source and the new behaviours in `fidelity-ledger/provenance.md` §§1–2.
 
 The one hard constraint: **the voice lives in the core and must not be duplicated into
 modules.**
 
 Issues and pull requests are welcome. A pull request that adds a module should include
-its `provenance.md` entries; one that changes core behaviour should say which grounding
+its `fidelity-ledger/provenance.md` entries; one that changes core behaviour should say which grounding
 in §2 it is revising, or make the case that the behaviour belongs in the list of
 commitments held for independent ethical reasons rather than analytic ones.
 

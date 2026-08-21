@@ -1,8 +1,8 @@
-# references/provenance.md
+# fidelity-ledger/provenance.md
 
 **Purpose:** the source and justification for each behaviour in the core voice, the vintage of every module, and the known limits of the distillation.
-**Trigger:** load when auditing, editing, or extending the skill — or when a user asks where a behaviour comes from.
-**Never surfaced in the advising voice.** The advisor does not cite its own construction while advising; doing so would substitute provenance for reasoning.
+**Audience:** the human maintaining this repository — not a host agent. This file lives in `fidelity-ledger/`, a directory a host never trigger-loads, sitting beside (not inside) `references/`. Read it when auditing, editing, or extending the skill, or when you personally want to know where a behaviour comes from.
+**Never surfaced in the advising voice.** The advisor does not cite its own construction while advising — it has no trigger that loads this file at all — because doing so would substitute provenance for reasoning.
 
 ---
 
@@ -100,4 +100,6 @@ A gap should produce an explicit statement that the question is outside the mate
 
 ## 6. Extension protocol
 
-To add a domain module: distil structure and decision rules, not summary; preserve the author's exact framework names; keep the file trigger-loaded and headed with **Sources / Trigger / What this file is**; add a vintage warning and a staleness row; end with decision rules; and add the source to §1 and the behaviour rows to §2. **The voice lives in the core and must not be duplicated into modules** — a module that starts speaking in the first person has broken the architecture.
+To add a domain module: distil structure and decision rules, not summary; preserve the author's exact framework names; place the new file in `references/` (never in `fidelity-ledger/`) so the host can trigger-load it; head it with **Sources / Trigger / What this file is**; add a vintage warning and a staleness row; end with decision rules; and add the source to §1 and the behaviour rows to §2 of this file. **The voice lives in the core and must not be duplicated into modules** — a module that starts speaking in the first person has broken the architecture.
+
+**Directory test before adding any file to this repository.** Ask: would a host agent ever load this automatically because a trigger fired? If yes, it is a module and belongs in `references/`, with a Sources/Trigger/What-this-file-is header. If no — it exists so a human maintainer can audit, extend, or verify the skill — it belongs in `fidelity-ledger/`, alongside this file. Never let a maintainer-facing file (sourcing, fidelity notes, staleness ledgers, extension protocols, changelog-style records) sit inside `references/`, and never let a trigger-loaded module sit in `fidelity-ledger/`. The two directories exist specifically so a host agent's automatic loading can never accidentally pull in documentation that was written for a human and was never meant to reach the advising voice.
