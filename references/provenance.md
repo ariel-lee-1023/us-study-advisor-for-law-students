@@ -16,8 +16,13 @@
 | 4 | Edwards, *LL.M. Roadmap* | `llm-pathway.md` | 2011 |
 | 5 | Ramsfield, *Culture to Culture: A Guide to U.S. Legal Writing* | `legal-writing.md` | 2005 |
 | 6 | Thelin, *American Higher Education: Issues and Institutions* | `institutions.md` | Core Concepts series |
+| 7 | Bodine, *Great Personal Statements for Law School* | `personal-statements.md` | 2006 |
+| 8 | The Princeton Review, *Law School Essays That Made a Difference*, 6th ed. | `personal-statements.md` | 2014 |
+| 9 | Stewart, *Perfect Personal Statements: Law, Business, Medicine, Graduate School*, 2nd ed. | `personal-statements.md` | 2002 |
+| 10 | Zhang & Mohapatra (eds.), *Successful Personal Statements to Get You into a Top University* | `personal-statements.md` (structural patterns only — see module §6) | UK/international undergraduate-admissions compilation, exact year unverified |
+| 11 | Top Law Schools, "Guide to Personal Statements" (top-law-schools.com) | `personal-statements.md` | Web page, undated — treat as current-as-fetched only |
 
-Sources 1–3 supply the **reasoning temperament and its procedures**. Sources 4–6 supply **domain structure**. This division is deliberate and load-bearing: the voice is not a subject-matter expert wearing an analyst's manner, it is an analyst reasoning over domain structure it treats as provisional.
+Sources 1–3 supply the **reasoning temperament and its procedures**. Sources 4–11 supply **domain structure**. This division is deliberate and load-bearing: the voice is not a subject-matter expert wearing an analyst's manner, it is an analyst reasoning over domain structure it treats as provisional.
 
 ## 2. Core behaviour → source map
 
@@ -54,7 +59,10 @@ Sources 1–3 supply the **reasoning temperament and its procedures**. Sources 4
 - **The domain sources are used for structure, not for facts.** See §4. Edwards is used for the shape of the pathway, Ramsfield for the architecture of U.S. legal prose, Thelin for institutional mechanism. Each also contains specifics that are now unreliable, and the modules mark them.
 - **Ramsfield's warning is honoured.** She explicitly cautions that her taxonomy of analytical patterns could become an end rather than a means, replacing judgment with formalism. `legal-writing.md` reproduces the warning rather than presenting the categories as a template.
 - **Thelin is applied to graduate and professional education by extension.** His institutional analysis is largely framed around undergraduate education; the RCM, cost/price, and governance mechanisms transfer directly, but claims specific to undergraduate admissions do not and are not carried over.
-- **Nothing is quoted at length from any source.** All modules are synthesised. Author terminology is preserved exactly where the term is the framework — ACH, Key Assumptions Check, Indicator Validator™, ELP, RCM, revenue theory, disease theory, cost/price/net price, perpetual beta, Fermi-izing, dragonfly eye — because paraphrasing a named framework loses the ability to find it in the source.
+- **The Zhang/Mohapatra source is deliberately used for structure only, never content.** It is a UK/international undergraduate-admissions compilation, outside the U.S.-law-school domain this skill covers (§5 lists non-U.S. jurisdictions as a known gap). `personal-statements.md` §6 extracts only the structural patterns that independently recur in the U.S.-law-specific sources (Bodine, the Princeton Review, Stewart) and explicitly enumerates the UK-specific mechanics — UCAS, Oxbridge interviews, A-level/IB framing — that must not be reasoned into a U.S. context. This is the same discipline as bounding Tetlock's numeric scoring in `calibration.md`: take the transferable mechanism, leave the non-transferable apparatus behind.
+- **Bodine's publication year required verification.** The source file's own filename metadata suggested 1959; bibliographic records (McGraw-Hill, 2006, 1st ed.) confirm the actual year. Always verify a source's publication date independently before writing a vintage note — do not trust filename or upload metadata.
+- **The top-law-schools.com page is treated as a web source, not a book.** It carries no fixed publication date and its sample-essay ratings and admissions-dean quote are current only as of the fetch date recorded in this repo's history; unlike the book sources, it should be re-fetched rather than assumed stable if its content is ever load-bearing for a specific claim.
+- **Nothing is quoted at length from any source.** All modules are synthesised. Author terminology is preserved exactly where the term is the framework — ACH, Key Assumptions Check, Indicator Validator™, ELP, RCM, revenue theory, disease theory, cost/price/net price, perpetual beta, Fermi-izing, dragonfly eye, TELL model, "data-mining your life," "Everything Signifies," "Fine Art of Damage Control," uniqueness filter — because paraphrasing a named framework loses the ability to find it in the source.
 
 ## 4. Staleness ledger
 
@@ -66,8 +74,11 @@ The reasoning modules age slowly; the domain modules age fast. Ordered by decay 
 | Visa procedures, work-authorization durations and caps | Very fast; regulatory. | Route to campus international office and current government guidance. |
 | Deadlines, tuition, fees, aid programmes, test requirements | Yearly. | Flag as volatile; verify against the school. |
 | Rankings, programme existence, faculty, class profiles | Yearly. | Verify; treat any specific school claim as provisional. |
+| Named schools' stated statement-weighting, named admissions officers/titles (Princeton Review interviews; top-law-schools.com) | Yearly to several years — staff and policy turn over. | Verify against the school's current published guidance; never state a named officer's view as current without checking. |
+| Specific prompts, word limits, optional-essay/addendum offerings for a given school and cycle | Yearly, sometimes cycle-to-cycle. | Always verify against that school's own current application instructions. |
 | Citation-format specifics, research tools | Slow but real. | Check current style manual. |
 | Application component structure; committee motivation | Slow. | Usable as structure. |
+| Personal-statement topic taxonomy, structural architecture, addendum/recommendation-letter mechanics (Bodine, Stewart, Princeton Review craft guidance) | Very slow — describes a durable genre convention. | Usable directly. |
 | Analytical patterns, rhetorical framework, design elements, ELP | Very slow — describes a legal culture. | Usable directly. |
 | Institutional mechanism: cost/price, RCM, revenue and disease theories, governance | Very slow. | Usable directly. |
 | Cognitive biases, ACH, calibration discipline | Effectively stable. | Usable directly. |
@@ -78,12 +89,12 @@ The reasoning modules age slowly; the domain modules age fast. Ordered by decay 
 
 Not covered by the corpus, and to be reasoned from the core rather than confabulated:
 
-- Any jurisdiction outside the U.S., including comparison of U.S. programmes with programmes elsewhere.
-- Non-law graduate admissions, beyond what Thelin's institutional analysis supports generically.
+- Any jurisdiction outside the U.S., including comparison of U.S. programmes with programmes elsewhere. `personal-statements.md` §6 draws only structural patterns from its one non-U.S. source and explicitly excludes that source's mechanics for this reason.
+- Non-law graduate admissions, beyond what Thelin's institutional analysis supports generically and what Stewart's cross-field comparison in `personal-statements.md` §1–2 supports for statement craft specifically.
 - Employment markets, hiring practices, and salary data.
 - Immigration paths beyond student status.
 - Tax, financial planning, and loan product specifics.
-- Anything about a named individual school. The corpus supports *how to evaluate* a school; it supports no claim *about* one.
+- Anything about a named individual school. The corpus supports *how to evaluate* a school; it supports no claim *about* one. This extends to `personal-statements.md`: named schools and officers in its sources are illustrative of a pattern, not a current claim about that school's process.
 
 A gap should produce an explicit statement that the question is outside the material, plus the core's reasoning applied honestly — never a confident-sounding answer assembled from adjacent knowledge.
 

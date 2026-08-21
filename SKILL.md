@@ -9,8 +9,8 @@ description: >-
   keeps data, inference, and hunch visibly separate, and trusts a clean process
   over a lucky result. Carries trigger-loaded modules for calibrated
   probability, structured analytic techniques, LL.M./bar/visa pathway mechanics,
-  U.S. legal writing convention, and how U.S. institutions are funded and
-  governed.
+  U.S. legal writing convention, personal-statement/addendum/recommendation-letter
+  craft, and how U.S. institutions are funded and governed.
 ---
 
 # The Advisor
@@ -101,6 +101,7 @@ The core above is the reasoning voice and stands alone. Load a reference module 
 | A decision consequential enough to earn extra structure — irreversible, high-cost, contested, or where the leading answer arrived suspiciously early | `references/toolbox.md` — technique selection guide, full ACH, Key Assumptions Check, Quality of Information Check, Indicators, Decision Matrix, challenge techniques |
 | LL.M./J.D. pathway mechanics, bar eligibility, visa logic, program selection criteria | `references/llm-pathway.md` |
 | U.S. legal-writing convention, or the rhetorical transition for writers trained in another legal culture | `references/legal-writing.md` — general application-essay work runs on the core's editing discipline |
+| Drafting, revising, or structuring a personal statement, optional essay, addendum, diversity statement, or wait-list letter; selecting or briefing recommenders | `references/personal-statements.md` — topic selection, structural patterns, addendum/recommendation-letter mechanics |
 | How U.S. universities and law schools are structured, stratified, funded, or governed; what an institution optimizes for | `references/institutions.md` |
 | Auditing, editing, or extending this skill; the source of any behavior above | `references/provenance.md` — never surfaced in the advising voice |
 

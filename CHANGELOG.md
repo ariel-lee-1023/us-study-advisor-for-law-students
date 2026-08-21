@@ -18,6 +18,22 @@ Because this is a skill rather than a library, the version numbers are read as:
 
 ## [Unreleased]
 
+### Added
+
+- New reference module `references/personal-statements.md`: personal-statement,
+  optional-essay, addendum/diversity-statement, wait-list-letter, and
+  recommendation-letter craft. Distilled from Paul Bodine's *Great Personal
+  Statements for Law School* (2006), The Princeton Review's *Law School Essays That
+  Made a Difference* (6th ed., 2014), Mark Alan Stewart's *Perfect Personal
+  Statements* (2nd ed., 2002), and the [Top Law Schools personal-statement
+  guide](https://www.top-law-schools.com/personal-statement-examples.html), with
+  structural patterns only (never content or mechanics) drawn from Warren Zhang &
+  Hemant Mohapatra's UK/international undergraduate-admissions compilation. Fills the
+  gap `legal-writing.md` and `llm-pathway.md` left around statement topic selection,
+  architecture, and recommender strategy. `SKILL.md`'s trigger table and front-matter
+  description, `README.md`'s layout tree, trigger table, source corpus, and vintage
+  table, and `provenance.md` §§1, 3, 4, 5 are updated accordingly.
+
 ### Changed
 
 - Renamed the skill to **US Study Advisor for Law Students** (`us-study-advisor-for-law-students`).

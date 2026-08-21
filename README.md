@@ -21,7 +21,7 @@ gut read into one confident-sounding sentence. Or it states last decade's rule a
 year's rule.
 
 This skill is built to make those three failures structurally awkward. The core voice
-carries the habits; six trigger-loaded modules carry the procedures and the domain
+carries the habits; seven trigger-loaded modules carry the procedures and the domain
 structure; and a provenance file records where every behaviour came from and how fast
 each piece of domain knowledge decays.
 
@@ -38,6 +38,7 @@ us-study-advisor-for-law-students/
 │   ├── toolbox.md                # structured analytic techniques
 │   ├── llm-pathway.md            # LL.M./J.D., bar eligibility, visas
 │   ├── legal-writing.md          # U.S. legal-writing convention
+│   ├── personal-statements.md    # topic selection, structure, addenda, recommendation letters
 │   ├── institutions.md           # how U.S. universities are funded and governed
 │   └── provenance.md             # sources, fidelity notes, staleness ledger
 ├── CHANGELOG.md
@@ -61,6 +62,7 @@ architecture, and `provenance.md` says so explicitly.
 | A decision consequential enough to earn extra structure — irreversible, high-cost, contested, or where the leading answer arrived suspiciously early | `references/toolbox.md` |
 | LL.M./J.D. pathway mechanics, bar eligibility, visa logic, programme selection | `references/llm-pathway.md` |
 | U.S. legal-writing convention, or the rhetorical transition for writers trained in another legal culture | `references/legal-writing.md` |
+| Drafting or structuring a personal statement, optional essay, addendum, or wait-list letter; selecting or briefing recommenders | `references/personal-statements.md` |
 | How U.S. universities and law schools are structured, funded, or governed | `references/institutions.md` |
 | Auditing, editing, or extending the skill | `references/provenance.md` |
 
@@ -135,7 +137,8 @@ The full decay-ordered ledger is in `references/provenance.md` §4. The headline
 | Bar eligibility rules for foreign-educated lawyers | Fastest | Never state from the module; route to the specific state bar every time |
 | Visa procedures, work-authorization durations and caps | Very fast | Route to the campus international office and current government guidance |
 | Deadlines, tuition, fees, aid programmes, test requirements | Yearly | Flag as volatile; verify against the school |
-| Institutional mechanism, rhetorical framework, cognitive biases | Very slow to stable | Usable directly |
+| Named schools' statement-weighting, named admissions officers | Yearly to several years | Verify against current published guidance |
+| Institutional mechanism, rhetorical framework, personal-statement genre conventions, cognitive biases | Very slow to stable | Usable directly |
 
 **Combining these modules never produces a current rule.**
 
@@ -143,7 +146,7 @@ The full decay-ordered ledger is in `references/provenance.md` §4. The headline
 
 ## Source corpus
 
-Three sources supply the reasoning temperament; three supply domain structure. The
+Three sources supply the reasoning temperament; the remainder supply domain structure. The
 division is deliberate — the voice is not a subject-matter expert wearing an analyst's
 manner, it is an analyst reasoning over domain structure it treats as provisional.
 
@@ -163,13 +166,24 @@ manner, it is an analyst reasoning over domain structure it treats as provisiona
   Academic Press, 2005)
 - John R. Thelin, *American Higher Education: Issues and Institutions* (Routledge,
   Core Concepts in Higher Education)
+- Paul Bodine, *Great Personal Statements for Law School* (McGraw-Hill, 2006)
+- The Princeton Review, *Law School Essays That Made a Difference* (6th ed., 2014)
+- Mark Alan Stewart, *Perfect Personal Statements: Law, Business, Medicine, Graduate
+  School* (Peterson's, 2nd ed., 2002)
+- Warren Zhang & Hemant Mohapatra (eds.), *Successful Personal Statements to Get You
+  into a Top University* — UK/international undergraduate-admissions compilation, used
+  for structural patterns only; see `references/personal-statements.md` §6 for what
+  transfers and what does not
+- [Top Law Schools, "Guide to Personal
+  Statements"](https://www.top-law-schools.com/personal-statement-examples.html) — web
+  source, treated as current-as-fetched rather than a fixed-date book
 
 Nothing is quoted at length from any source; the modules are synthesised. Author
 terminology is preserved exactly where the term *is* the framework — ACH, Key
 Assumptions Check, ELP, RCM, revenue theory, disease theory, cost/price/net price,
-perpetual beta, Fermi-izing — because paraphrasing a named framework destroys the
-ability to find it in the original. A behaviour-by-behaviour source map is in
-`references/provenance.md` §2.
+perpetual beta, Fermi-izing, TELL model, uniqueness filter — because paraphrasing a
+named framework destroys the ability to find it in the original. A behaviour-by-behaviour
+source map is in `references/provenance.md` §2.
 
 ---
 
